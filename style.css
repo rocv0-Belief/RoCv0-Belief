@@ -1,0 +1,109 @@
+body {
+  background-color: #DCE3EA;
+  color: #1A152A;
+  font-size: 18px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: 1200px;
+}
+
+/* HEADER GENERAL */
+.site-header {
+  display: flex;
+  flex-direction: column;  
+  align-items:center;
+  background-color: #DCE3EA;
+  padding: 10% 20px;
+}
+
+/* LOGO + TITLU */
+.header-LogoTitlu {
+  display: flex;
+  align-items:center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  align-items: center;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.site-titlul {
+  align-items: center;
+  font-size: 24px;
+  color: #1B263B;
+  margin: 0;
+}
+
+/* NAVIGAȚIE */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  background-color: #1F2D3D;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  display: block;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #A0B3D9;
+  color:#3E5F8A;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-LogoTitlu {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .main-nav li {
+    width: 100%;
+  }
+
+  .header-nav {
+    justify-content: center;
+  }
+}
+.subsol{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #DCE3EA;
+  padding: 5px;
+  text-align: center;
+  z-index: 1000;
+}
